@@ -1,0 +1,5 @@
+API_KEY = 'yourBotAPIKey'
+API_KEY_SECRET = 'YouBotAPISecret'
+username = 'yourTwitterHandle'
+password = 'yourTwitterPassword'
+email = 'your@email.com'
