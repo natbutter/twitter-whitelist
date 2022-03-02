@@ -5,7 +5,7 @@ import config
 
 ########## EDIT THESE LINES AS NEEDED ###################
 #Tweet ID, (get it from the URL of the tweet)
-tweet_id = "1498318615279550471"
+tweet_id = "1498719341147262983"
 #1498751283326590983, 1498698889288986630, 1498318615279550471
 #If you need to leave a comment, set this to True and change the text and tags for what you want.
 tagging=True
