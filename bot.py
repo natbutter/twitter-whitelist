@@ -9,7 +9,7 @@ tweet_id = "1498719341147262983"
 #1498751283326590983, 1498698889288986630, 1498318615279550471
 #If you need to leave a comment, set this to True and change the text and tags for what you want.
 tagging=True
-textandtags = "Yeah @bjow5" #"@bjow5 @geneverse_ @wisey_9 check out this NFT"
+textandtags = "Check out this whitelist we will win @bjow5 @universebutter @geneverse_"
 
 #If you need to retweet the post, set to True
 retweeting=True
@@ -18,13 +18,13 @@ retweeting=True
 following=True
 
 #Your Twitter ID, get it from here: https://tweeterid.com/
-user_id = "1265067462359314432"
+user_id = "1498114008729399296"
 #########################################################
 
 #Compiling payloads based on above
 payloadpost = {"text": textandtags, "reply": {"in_reply_to_tweet_id": tweet_id}}
 payloadretweet = {"tweet_id": tweet_id }
-tweetparams={"ids": tweet_id, "expansions":"entities.mentions.username", "user.fields":"entities"}
+tweetparams={"ids": tweet_id, "expansions":"entities.mentions.username", "expansions":"author_id"}
 
 #bearer_token = config.BEARER_TOKEN
 consumer_key = config.API_KEY
@@ -67,7 +67,7 @@ if __name__ == "__main__":
     try:
       follows=[i["id"] for i in json_response["includes"]["users"]]
     except:
-      print("Could not follow, no tags in tweet probably.")
+      print("Could not follow.", json_response)
       following=False
     ##########
 
